@@ -9,6 +9,10 @@ import { PostPageComponent } from './post-page/post-page.component';
 import { HeaderPageComponent } from './header-page/header-page.component';
 import { FooterPageComponent } from './footer-page/footer-page.component';
 
+//material-design
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +24,11 @@ import { FooterPageComponent } from './footer-page/footer-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    //material design
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
