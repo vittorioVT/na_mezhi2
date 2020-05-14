@@ -20,6 +20,9 @@ const routes: Routes = [
       { path: 'view', component: ViewPageComponent },
       { path: 'europeonexperience', component: EuropeonExperiencePageComponent }
     ]
+  },
+  {
+    path: 'admin', loadChildren:'./admin/admin.module#AdminModule'
   }
 
 ];
