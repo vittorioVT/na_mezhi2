@@ -19,6 +19,7 @@ import { AgrarianReformPageComponent } from './agrarian-reform-page/agrarian-ref
 import { AbroadPageComponent } from './abroad-page/abroad-page.component';
 import { ViewPageComponent } from './view-page/view-page.component';
 import { EuropeonExperiencePageComponent } from './europeon-experience-page/europeon-experience-page.component';
+import { PostComponent } from './shared/components/post/post.component';
 
 
 
@@ -34,7 +35,8 @@ import { EuropeonExperiencePageComponent } from './europeon-experience-page/euro
     AgrarianReformPageComponent,
     AbroadPageComponent,
     ViewPageComponent,
-    EuropeonExperiencePageComponent
+    EuropeonExperiencePageComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
