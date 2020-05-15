@@ -3,12 +3,10 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\footer-page",
-    "\\src\\app\\header-page",
-    "\\src\\app\\shared",
+    "\\src\\app\\admin\\shared\\components\\admin-layout",
     "\\src\\app\\shared\\components",
     "\\src\\app\\shared\\components\\main-layout"
   ],
-  "SelectedNode": "\\src\\app\\app-routing.module.ts",
+  "SelectedNode": "\\src\\app",
   "PreviewInSolutionExplorer": false
 }

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LandMarketPageComponent } from './land-market-page/land-market-page.component';
@@ -7,6 +7,7 @@ import { AgrarianReformPageComponent } from './agrarian-reform-page/agrarian-ref
 import { AbroadPageComponent } from './abroad-page/abroad-page.component';
 import { ViewPageComponent } from './view-page/view-page.component';
 import { EuropeonExperiencePageComponent } from './europeon-experience-page/europeon-experience-page.component';
+import { AdminModule } from './admin/admin.module';
 
 
 const routes: Routes = [
@@ -28,7 +29,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    preloadingStrategy: PreloadAllModules
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
