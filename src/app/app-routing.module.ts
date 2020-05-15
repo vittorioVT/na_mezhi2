@@ -8,6 +8,7 @@ import { AbroadPageComponent } from './abroad-page/abroad-page.component';
 import { ViewPageComponent } from './view-page/view-page.component';
 import { EuropeonExperiencePageComponent } from './europeon-experience-page/europeon-experience-page.component';
 import { AdminModule } from './admin/admin.module';
+import { PostPageComponent } from './post-page/post-page.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
     path: '', component: MainLayoutComponent, children: [
       { path: '', redirectTo: '/', pathMatch: 'full' },
       { path: '', component: HomePageComponent },
+      { path: 'post/:id', component: PostPageComponent },
       { path: 'landmarket', component: LandMarketPageComponent },
       { path: 'agrarionreform', component: AgrarianReformPageComponent },
       { path: 'abroad', component: AbroadPageComponent },
