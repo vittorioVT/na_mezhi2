@@ -1,0 +1,10 @@
+.navbar-admin {
+  background: #651FFF;
+  color: #fff;
+
+  li.active a {
+    color: #FFFF00;
+    font-weight: bold;
+    cursor: default;
+  }
+}

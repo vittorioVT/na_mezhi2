@@ -1,1 +1,22 @@
-<p>login-page works!</p>
+<form class="card-m" [formGroup]="form" (ngSubmit)="submit()">
+  <h3>Войти в панель администратора</h3>
+  <div class="form-control-m" [ngClass]="{invalid: form.get('email').touched && form.get('email').invalid}">
+    <label for="email">Email</label>
+    <input id="email" type="email" formControlName="email" />
+    <div *ngIf="form.get('email').touched && form.get('email').invalid"
+         class="validation" >
+      <small>error</small>
+    </div>
+  </div>
+
+  <div class="form-control-m" [ngClass]="{invalid: form.get('password').touched && form.get('password').invalid}">
+    <label for="password">Пароль</label>
+    <input id="password" type="password" formControlName="password" />
+    <div *ngIf="form.get('password').touched && form.get('password').invalid"
+         class="validation">
+      <small>error</small>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-admin-primary" [disabled]="form.invalid">Войти</button>
+</form>

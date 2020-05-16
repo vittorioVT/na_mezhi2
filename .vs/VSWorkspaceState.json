@@ -3,10 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\admin",
+    "\\src\\app\\admin\\shared",
+    "\\src\\app\\admin\\shared\\components",
     "\\src\\app\\admin\\shared\\components\\admin-layout",
     "\\src\\app\\shared\\components",
-    "\\src\\app\\shared\\components\\main-layout"
+    "\\src\\app\\shared\\components\\post"
   ],
-  "SelectedNode": "\\src\\app",
+  "SelectedNode": "\\src\\app\\admin\\shared\\components\\admin-layout\\admin-layout.component.ts",
   "PreviewInSolutionExplorer": false
 }
