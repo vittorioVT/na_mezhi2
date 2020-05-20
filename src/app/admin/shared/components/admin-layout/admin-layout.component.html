@@ -2,7 +2,7 @@
 <nav class="navbar-m navbar-admin">
   <h4><a [routerLink]="['/']">На сайт</a></h4>
   <h2>Панель администратора</h2>
-  <ul>
+  <ul *ngIf="auth.isAuthenticated()">
     <li routerLinkActive="active">
       <a [routerLink]="['/admin', 'dashboard']">Главная</a>
     </li>

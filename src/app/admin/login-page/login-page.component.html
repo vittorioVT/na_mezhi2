@@ -1,5 +1,9 @@
 <form class="card-m" [formGroup]="form" (ngSubmit)="submit()">
   <h3>Войти в панель администратора</h3>
+  <div class="alert alert-danger" *ngIf="auth.error$ | async as error">
+    {{error}}
+  </div>
+
   <div class="form-control-m" [ngClass]="{invalid: form.get('email').touched && form.get('email').invalid}">
     <label for="email">Email</label>
     <input id="email" type="email" formControlName="email" />
@@ -9,7 +13,7 @@
         Введите поля email
       </small>
       <small *ngIf="form.get('email').errors.email">
-        Поле должно соответсвовать требования email
+        Поле должно соответствовать требования email
       </small>
     </div>
   </div>
@@ -29,5 +33,5 @@
     </div>
   </div>
 
-  <button type="submit" class="btn btn-admin-primary" [disabled]="form.invalid">Войти</button>
+  <button type="submit" class="btn btn-admin-primary" [disabled]="form.invalid || submitted">Войти</button>
 </form>
