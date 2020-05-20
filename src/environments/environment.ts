@@ -5,8 +5,8 @@
 import { Environment } from './interface';
 
 export const environment = {
-  apiKey: 'AIzaSyDbri618CBPf5zQc3M73aYAPQM7ekd1cLo',
-  production: false
+  production: false,
+  apiKey: 'AIzaSyDbri618CBPf5zQc3M73aYAPQM7ekd1cLo'
 };
 
 /*
