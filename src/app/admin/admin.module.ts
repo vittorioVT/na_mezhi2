@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AuthService } from './shared/auth.service';
+import { AuthGuard } from './shared/services/auth.guard';
 
 import { AdminLayoutComponent } from './shared/components/admin-layout/admin-layout.component';
 import { LoginPageComponent } from './login-page/login-page.component';
@@ -11,6 +12,7 @@ import { DashboardPageComponent } from './dashboard-page/dashboard-page.componen
 import { CreatePageComponent } from './create-page/create-page.component';
 import { EditPageComponent } from './edit-page/edit-page.component';
 import { SharedModule } from './shared/shared.module';
+
 
 
 
@@ -41,7 +43,7 @@ import { SharedModule } from './shared/shared.module';
     CreatePageComponent,
     EditPageComponent
   ],
-  providers: [AuthService]
+  providers: [AuthService, AuthGuard]
 
 })
 export class AdminModule { }
