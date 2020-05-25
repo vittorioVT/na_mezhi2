@@ -4,16 +4,10 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\admin",
-    "\\src\\app\\admin\\dashboard-page",
-    "\\src\\app\\admin\\login-page",
-    "\\src\\app\\admin\\shared",
-    "\\src\\app\\admin\\shared\\components",
-    "\\src\\app\\admin\\shared\\components\\admin-layout",
-    "\\src\\app\\header-page",
-    "\\src\\app\\shared",
-    "\\src\\app\\shared\\components",
-    "\\src\\environments"
+    "\\src\\app\\admin\\create-page",
+    "\\src\\app\\admin\\shared\\services",
+    "\\src\\app\\header-page"
   ],
-  "SelectedNode": "\\src\\app\\admin\\shared\\components\\admin-layout\\admin-layout.component.ts",
+  "SelectedNode": "\\src\\app\\admin\\create-page\\create-page.component.html",
   "PreviewInSolutionExplorer": false
 }
