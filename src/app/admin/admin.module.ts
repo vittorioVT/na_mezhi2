@@ -3,7 +3,6 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
-import { AuthService } from './shared/auth.service';
 import { AuthGuard } from './shared/services/auth.guard';
 
 import { AdminLayoutComponent } from './shared/components/admin-layout/admin-layout.component';
@@ -50,7 +49,7 @@ import { SharedModule } from './shared/shared.module';
     CreatePageComponent,
     EditPageComponent
   ],
-  providers: [AuthService, AuthGuard]
+  providers: [AuthGuard]
 
 })
 export class AdminModule { }
