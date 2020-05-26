@@ -6,7 +6,8 @@ import { Environment } from './interface';
 
 export const environment = {
   production: false,
-  apiKey: 'AIzaSyDbri618CBPf5zQc3M73aYAPQM7ekd1cLo'
+  apiKey: 'AIzaSyDbri618CBPf5zQc3M73aYAPQM7ekd1cLo',
+  fbDbUrl: 'https://na-mezhi.firebaseio.com'
 };
 
 /*

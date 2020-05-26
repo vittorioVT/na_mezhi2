@@ -1,5 +1,5 @@
 export interface Environment {
   production: boolean,
-  apiKey: string
-  
+  apiKey: string,
+  fbDbUrl: string
 }

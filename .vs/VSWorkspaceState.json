@@ -5,9 +5,11 @@
     "\\src\\app",
     "\\src\\app\\admin",
     "\\src\\app\\admin\\create-page",
+    "\\src\\app\\admin\\login-page",
+    "\\src\\app\\admin\\shared",
     "\\src\\app\\admin\\shared\\services",
     "\\src\\app\\header-page"
   ],
-  "SelectedNode": "\\src\\app\\admin\\create-page\\create-page.component.html",
+  "SelectedNode": "\\src\\app\\admin\\create-page\\create-page.component.ts",
   "PreviewInSolutionExplorer": false
 }
