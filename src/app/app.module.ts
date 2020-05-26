@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+import { AuthInterceptor } from './shared/auth.interceptor';
+
 
 import { AppComponent } from './app.component';
 import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
@@ -51,7 +53,7 @@ import { PostComponent } from './shared/components/post/post.component';
     MatToolbarModule,
 
   ],
-  providers: [],
+  providers: [AuthInterceptor],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
