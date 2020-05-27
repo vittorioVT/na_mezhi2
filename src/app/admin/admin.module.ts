@@ -11,6 +11,7 @@ import { DashboardPageComponent } from './dashboard-page/dashboard-page.componen
 import { CreatePageComponent } from './create-page/create-page.component';
 import { EditPageComponent } from './edit-page/edit-page.component';
 import { SharedModule } from './shared/shared.module';
+import { SearchPipe } from './shared/search.pipe';
 
 
 
@@ -47,7 +48,8 @@ import { SharedModule } from './shared/shared.module';
     LoginPageComponent,
     DashboardPageComponent,
     CreatePageComponent,
-    EditPageComponent
+    EditPageComponent,
+    SearchPipe
   ],
   providers: [AuthGuard]
 

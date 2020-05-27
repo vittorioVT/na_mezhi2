@@ -4,12 +4,11 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\admin",
-    "\\src\\app\\admin\\create-page",
-    "\\src\\app\\admin\\login-page",
+    "\\src\\app\\admin\\dashboard-page",
     "\\src\\app\\admin\\shared",
-    "\\src\\app\\admin\\shared\\services",
-    "\\src\\app\\header-page"
+    "\\src\\app\\header-page",
+    "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\admin\\create-page\\create-page.component.ts",
+  "SelectedNode": "\\src\\app\\admin\\dashboard-page\\dashboard-page.component.html",
   "PreviewInSolutionExplorer": false
 }
