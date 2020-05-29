@@ -3,6 +3,7 @@ import { PostService } from 'src/app/shared/post.service';
 import { Post } from '../shared/interfaces';
 import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
+import { AlertService } from '../shared/services/alert.service';
 
 
 @Component({
@@ -18,7 +19,8 @@ export class DashboardPageComponent implements OnInit, OnDestroy {
   searchStr: string;
 
   constructor(private postService: PostService,
-              private router: Router) { }
+    private router: Router,
+    private alert: AlertService) { }
 
   ngOnInit() {
     this.pSub = this.postService.getAll().subscribe(posts => {
@@ -39,6 +41,7 @@ export class DashboardPageComponent implements OnInit, OnDestroy {
     this.dSub = this.postService.remove(id).subscribe(() => {
       this.posts = this.posts.filter(post => {
         post.id !== id;
+        this.alert.danger('Пост был удален!');
       })
     })
   }

@@ -5,6 +5,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { switchMap } from 'rxjs/operators';
 import { Post } from '../shared/interfaces';
 import { Subscription } from 'rxjs';
+import { AlertService } from '../shared/services/alert.service';
 
 @Component({
   selector: 'app-edit-page',
@@ -20,7 +21,8 @@ export class EditPageComponent implements OnInit, OnDestroy {
 
   constructor(private route: ActivatedRoute,
     private postsService: PostService,
-    private router: Router) { }
+    private router: Router,
+    private alert: AlertService) { }
 
   ngOnInit(): void {
     this.route.params.pipe(
@@ -48,7 +50,8 @@ export class EditPageComponent implements OnInit, OnDestroy {
       title: this.form.value.title,
     }).subscribe(() => {
       this.submitted = false;
-      //this.router.navigate(['/admin','dashboard']);
+      this.alert.warning('Пост был обновлен!');
+      this.router.navigate(['/admin','dashboard']);
       })
   }
 
