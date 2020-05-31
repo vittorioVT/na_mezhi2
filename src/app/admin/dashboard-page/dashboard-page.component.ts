@@ -2,7 +2,6 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { PostService } from 'src/app/shared/post.service';
 import { Post } from '../shared/interfaces';
 import { Subscription } from 'rxjs';
-import { Router } from '@angular/router';
 import { AlertService } from '../shared/services/alert.service';
 
 
@@ -19,8 +18,7 @@ export class DashboardPageComponent implements OnInit, OnDestroy {
   searchStr: string;
 
   constructor(private postService: PostService,
-    private router: Router,
-    private alert: AlertService) { }
+     private alert: AlertService) { }
 
   ngOnInit() {
     this.pSub = this.postService.getAll().subscribe(posts => {

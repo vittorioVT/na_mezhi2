@@ -23,6 +23,12 @@ import { AbroadPageComponent } from './abroad-page/abroad-page.component';
 import { ViewPageComponent } from './view-page/view-page.component';
 import { EuropeonExperiencePageComponent } from './europeon-experience-page/europeon-experience-page.component';
 import { PostComponent } from './shared/components/post/post.component';
+import { registerLocaleData } from '@angular/common';
+import ruUaLocale from '@angular/common/locales/ru-UA';
+
+registerLocaleData(ruUaLocale, 'ru-UA');
+
+
 
 const INTERCEPTOR_PROVIDER: Provider = {
   provide: HTTP_INTERCEPTORS,
