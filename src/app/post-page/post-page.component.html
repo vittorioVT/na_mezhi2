@@ -1,24 +1,22 @@
-<div class="post">
-  <div class="header">
-    <h1>Post title</h1>
-    <button [routerLink]="['/']" class="btn-m btn-link-m" [ngStyle]="{color: 'red'}">
-      На головну
-    </button>
-  </div>
-  <div class="info">
-      <strong>Тут автор</strong><br />
-      <small>15.05.2020</small>
+<div *ngIf="posts$ | async as post; else loading">
+  <div class="post">
+    <div class="header">
+      <h2>{{post.title}}</h2>
+      <button [routerLink]="['/']" class="btn-m btn-link-m" [ngStyle]="{color: 'red'}">
+        На головну
+      </button>
     </div>
- 
-  <div>
-      <p>
-      Просте ж запитання. А відповідати ніхто не хоче.
-      Навіщо затівати продаж у приватну власніть
-      сільськогогосподарських угідь, та ще й з участю міжнародних
-      шахраїв, на 15 -у році мораторію, згаявши час на що завгодно,
-      тільки не на розробку досконалих моделей земельного ринку?
-    </p>
-
+    <div class="info">
+      <strong>{{post.author}}</strong><br />
+      <small>{{post.date | date: 'medium': null: 'ru-UA'}}</small>
+    </div>
+    <div>
+       <quill-view-html [content]="post.text"></quill-view-html>  
+    </div>
   </div>
-  
 </div>
+<ng-template #loading>
+  <p class="text-center">
+    Идет загрузка страницы
+  </p>
+</ng-template>
