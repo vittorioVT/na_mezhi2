@@ -2,13 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app",
-    "\\src\\app\\admin\\shared\\components",
-    "\\src\\app\\admin\\shared\\components\\admin-layout",
-    "\\src\\app\\admin\\shared\\components\\alert",
-    "\\src\\app\\admin\\shared\\services",
-    "\\src\\app\\shared\\components"
+    "\\src\\app"
   ],
-  "SelectedNode": "\\src\\app\\app.module.ts",
+  "SelectedNode": "\\src\\app\\shared",
   "PreviewInSolutionExplorer": false
 }
