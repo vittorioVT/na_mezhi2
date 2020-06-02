@@ -13,11 +13,12 @@
     </div>
   </div>
 
+
   <div class="form-control-m">
     <label>Контент поста</label>
     <quill-editor formControlName="text"></quill-editor>
   </div>
-  
+
   <div class="form-control-m" [ngClass]="{invalid: form.get('author').touched && form.get('author').invalid}">
     <label for="author">Автор поста: </label>
     <input id="author" type="text" formControlName="author" />
@@ -25,6 +26,17 @@
          class="validation">
       <small *ngIf="form.get('author').errors.required">
         Введите автора поста
+      </small>
+    </div>
+  </div>
+
+  <div class="form-control-m" [ngClass]="{invalid: form.get('picture').touched && form.get('picture').invalid}">
+    <label for="picture">Изображение поста: </label>
+    <input id="picture" type="text" formControlName="picture" />
+    <div *ngIf="form.get('picture').touched && form.get('picture').invalid"
+         class="validation">
+      <small *ngIf="form.get('picture').errors.required">
+        Введите изображение поста
       </small>
     </div>
   </div>
